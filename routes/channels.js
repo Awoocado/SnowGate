@@ -6,7 +6,7 @@ const utils = require('../utils')
 router.get('/channels/:id', async (req, res) => {
   return utils.wrapRequest(req.rest, 'channel', 'getChannel', res, req.params.id)
 })
-// Modify Channel
+// Update Channel
 router.patch('/channels/:id', async (req, res) => {
   return utils.wrapRequest(req.rest, 'channel', 'updateChannel', res, req.params.id, req.body)
 })
